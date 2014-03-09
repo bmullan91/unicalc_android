@@ -17,7 +17,7 @@ public class App extends Activity {
 
         //load the url
         WebView myWebView = (WebView) findViewById(R.id.webview);
-        myWebView.loadUrl("file:///android_asset/index.html");
+        myWebView.loadUrl("file:///android_asset/web_app/index.html");
 
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
