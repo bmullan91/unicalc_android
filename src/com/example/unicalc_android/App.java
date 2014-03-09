@@ -12,13 +12,11 @@ public class App extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-
         //load the url
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.loadUrl("file:///android_asset/web_app/index.html");
 
+        //important!
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDomStorageEnabled(true);
