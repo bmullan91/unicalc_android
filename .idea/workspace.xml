@@ -65,6 +65,38 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/unicalc_android/main/WebAppInterface.java" line="48" class="unicalc_android.main.WebAppInterface" package="unicalc_android.main">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/unicalc_android/main/WebAppInterface.java" line="29" class="unicalc_android.main.WebAppInterface" package="unicalc_android.main">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -74,55 +106,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <file leaf-file-name="WebAppInterface.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unicalc_android/main/WebAppInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="44" selection-start="95" selection-end="95" vertical-scroll-proportion="-0.0" vertical-offset="30" max-vertical-offset="150">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="39" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildConfig.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen/unicalc_android/main/BuildConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="195">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Manifest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen/unicalc_android/main/Manifest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="R.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen/unicalc_android/main/R.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/unicalc_android/main/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="76" selection-start="749" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="47" column="39" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1185">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,10 +117,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebAppInterface.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/unicalc_android/main/WebAppInterface.java">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="39" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.31050956" vertical-offset="510" max-vertical-offset="1185">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/unicalc_android/main/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.80097085" vertical-offset="0" max-vertical-offset="540">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,8 +160,8 @@
         <option value="$PROJECT_DIR$/src/com/example/unicalc_android/App.java" />
         <option value="$PROJECT_DIR$/gen/com/example/unicalc_android/BuildConfig.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/unicalc_android/main/App.java" />
         <option value="$PROJECT_DIR$/src/unicalc_android/main/WebAppInterface.java" />
+        <option value="$PROJECT_DIR$/src/unicalc_android/main/App.java" />
       </list>
     </option>
   </component>
@@ -283,7 +279,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="eb09aa46" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="08dbe26d" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Dummydevice" />
     <property name="FullScreen" value="false" />
     <property name="ExportedModule" value="unicalc_android" />
@@ -498,7 +494,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3307927" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -624,33 +620,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="10" selection-start="245" selection-end="245" vertical-scroll-proportion="0.23219815" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/unicalc_android/main/BuildConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/unicalc_android/main/Manifest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
@@ -670,32 +645,67 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/assets/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0388514" vertical-offset="615" max-vertical-offset="5775">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/unicalc_android/main/R.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state line="6" column="1" selection-start="176" selection-end="176" vertical-scroll-proportion="0.1433121" vertical-offset="0" max-vertical-offset="628">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/unicalc_android/main/App.java">
+    <entry file="file://$PROJECT_DIR$/gen/unicalc_android/main/Manifest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="76" selection-start="749" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+        <state line="5" column="19" selection-start="178" selection-end="178" vertical-scroll-proportion="0.11942675" vertical-offset="0" max-vertical-offset="628">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/unicalc_android/main/BuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="181" selection-end="181" vertical-scroll-proportion="0.11942675" vertical-offset="0" max-vertical-offset="628">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="39" selection-start="259" selection-end="259" vertical-scroll-proportion="0.11942675" vertical-offset="0" max-vertical-offset="628">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="44" selection-start="95" selection-end="95" vertical-scroll-proportion="0.049751244" vertical-offset="0" max-vertical-offset="603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unicalc_android/main/WebAppInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="39" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1185">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/unicalc_android/main/WebAppInterface.java">
+    <entry file="file://$PROJECT_DIR$/assets/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="39" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.31050956" vertical-offset="510" max-vertical-offset="1185">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unicalc_android/main/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.80097085" vertical-offset="0" max-vertical-offset="540">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

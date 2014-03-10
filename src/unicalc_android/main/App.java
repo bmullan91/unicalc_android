@@ -21,7 +21,7 @@ public class App extends Activity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDomStorageEnabled(true);
 
-        myWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
+        //myWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
 
 
 
