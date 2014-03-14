@@ -1,12 +1,10 @@
 package unicalc_android.main;
 
 import android.content.Context;
+import android.util.Log;
 import android.webkit.JavascriptInterface;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class WebAppInterface {
     Context mContext;
@@ -16,58 +14,55 @@ public class WebAppInterface {
         mContext = c;
     }
 
-    /** Show a toast from the web page */
-//    @JavascriptInterface
-//    public void showToast(String toast) {
-//        Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show();
-//    }
+    private void writeToFile(String fileName, String data) {
+        try {
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(mContext.openFileOutput(fileName, Context.MODE_PRIVATE));
+            outputStreamWriter.write(data);
+            outputStreamWriter.close();
+        }
+        catch (IOException e) {
+            Log.e("Exception", "File write failed: " + e.toString());
+        }
+    }
 
-    @JavascriptInterface
-    public boolean setItem(String key, String results) {
+
+    private String readFromFile(String fileName) {
+
+        String ret = "";
 
         try {
+            InputStream inputStream = mContext.openFileInput(fileName);
 
-            FileOutputStream fos = mContext.openFileOutput(key, Context.MODE_PRIVATE);
+            if ( inputStream != null ) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                String receiveString = "";
+                StringBuilder stringBuilder = new StringBuilder();
 
-            try {
-                fos.write(results.getBytes());
-                fos.close();
-            } catch (IOException e) {
-                return false;
+                while ( (receiveString = bufferedReader.readLine()) != null ) {
+                    stringBuilder.append(receiveString);
+                }
+
+                inputStream.close();
+                ret = stringBuilder.toString();
             }
-
-
-        } catch (FileNotFoundException e) {
-            return false;
+        }
+        catch (FileNotFoundException e) {
+            Log.e("login activity", "File not found: " + e.toString());
+        } catch (IOException e) {
+            Log.e("login activity", "Can not read file: " + e.toString());
         }
 
-        return true;
+        return ret;
+    }
+
+    @JavascriptInterface
+    public void setItem(String key, String results) {
+        writeToFile(key, results);
     }
 
     @JavascriptInterface
     public String getItem(String key) {
-        String failed = "";
-        StringBuffer fileContent;
-
-        try {
-
-            FileInputStream fis = mContext.openFileInput(key);
-
-            fileContent = new StringBuffer("");
-            byte[] buffer = new byte[1024];
-
-            try {
-                while (fis.read(buffer) != -1) {
-                    fileContent.append(new String(buffer));
-                }
-
-            } catch (IOException e) {
-                return failed;
-            }
-        } catch (FileNotFoundException e) {
-            return failed;
-        }
-
-        return fileContent.toString();
+        return readFromFile(key);
     }
 }

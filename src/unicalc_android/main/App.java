@@ -3,6 +3,9 @@ package unicalc_android.main;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
+import android.webkit.ConsoleMessage;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
@@ -16,12 +19,20 @@ public class App extends Activity {
         //load the url
         WebView myWebView = (WebView) findViewById(R.id.webview);
 
+
+        myWebView.setWebChromeClient(new WebChromeClient() {
+            public boolean onConsoleMessage(ConsoleMessage cm) {
+                Log.d("WebView", cm.message() + " -- From line "
+                        + cm.lineNumber() + " of "
+                        + cm.sourceId());
+                return true;
+            }
+        });
+
         //chrome debugger - visit chrome://inspect/#devices
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             WebView.setWebContentsDebuggingEnabled(true);
         }
-
-        myWebView.loadUrl("file:///android_asset/webapp/index.html");
 
         //important!
         WebSettings webSettings = myWebView.getSettings();
@@ -32,10 +43,10 @@ public class App extends Activity {
         webSettings.setBuiltInZoomControls(false);
         webSettings.setSupportZoom(false);
 
-        //Testing localStorage first..
-        //myWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
+        //inject the interface
+        myWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
 
-
+        myWebView.loadUrl("file:///android_asset/webapp/index.html");
 
 
     }
