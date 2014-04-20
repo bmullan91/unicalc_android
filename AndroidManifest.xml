@@ -3,7 +3,7 @@
           package="unicalc_android.main"
           android:versionCode="5"
           android:versionName="1.4">
-    <uses-sdk android:minSdkVersion="17"/>
+    <uses-sdk android:minSdkVersion="17"/> <!-- browserify requires android 4.2 -->
 
     <supports-screens android:resizeable="true"
                       android:smallScreens="true"
