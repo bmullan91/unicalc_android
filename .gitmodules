@@ -1,3 +1,0 @@
-[submodule "assets/webapp"]
-	path = assets/webapp
-	url = git://github.com/bmullan91/unicalc.git
