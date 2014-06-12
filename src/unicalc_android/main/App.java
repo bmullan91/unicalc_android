@@ -16,9 +16,7 @@ public class App extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        //load the url
         WebView myWebView = (WebView) findViewById(R.id.webview);
-
 
         myWebView.setWebChromeClient(new WebChromeClient() {
             public boolean onConsoleMessage(ConsoleMessage cm) {
@@ -39,13 +37,14 @@ public class App extends Activity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDomStorageEnabled(true);
 
-        //Prevent users from zooming - also prevents the webview auto zooming on input fields
+        //Prevent users from zooming
         webSettings.setBuiltInZoomControls(false);
         webSettings.setSupportZoom(false);
 
         //inject the interface
         myWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
 
+        //load the url
         myWebView.loadUrl("file:///android_asset/webapp/index.html");
 
 
